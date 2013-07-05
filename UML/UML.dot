@@ -1,0 +1,37 @@
+digraph G {
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+
+        node [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+                shape = "record"
+        ]
+
+        edge [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+        ]
+
+
+
+AppDelegate [
+                label = "{AppDelegate|window : UIWindow *\ltabBarController : UITabBarController *\l}"
+        ]
+
+MainViewController [
+                label = "{MainViewController|initWithNibName(NSString *nibNameOrNil, NSBundle *nibBundleOrNil) : id}"
+        ]
+
+DrawViewController [
+                label = "{DrawViewController|mainImage : UIImageView *\ltempDrawImage : UIImageView *\lsettingsMenu : UIView *\lsettingsBox : UIView *\lRGBButt : UIButton *\lbrush : CGFloat\lopacity : CGFloat\lbrushLabel : UILabel *\lopacityLabel : UILabel *\lbrushSlider : UISlider *\lopacitySlider : UISlider *\lbrushValueLabel : UILabel *\lopacityValueLabel : UILabel *\lbrushPreview : UIImageView *\lrgbText : UILabel *\lrgbSlider1 : UISlider *\lrgbSlider2 : UISlider *\lrgbSlider3 : UISlider *\lredLabel : UILabel *\lgreenLabel : UILabel *\lblueLabel : UILabel *\lblackPencil : UIButton *\lgreyPencil : UIButton *\lredPencil : UIButton *\lbluePencil : UIButton *\ldarkGreenPencil : UIButton *\llightGreenPencil : UIButton *\llightBluePencil : UIButton *\lbrownPencil : UIButton *\ldarkOrangePencil : UIButton *\lyellowPencil : UIButton *\leraser : UIButton *\lred : CGFloat\lgreen : CGFloat\lblue : CGFloat\lpencils : NSArray *\l|initWithNibName(NSString *nibNameOrNil, NSBundle *nibBundleOrNil) : id\lsliderChanged(id sender) : IBAction\lpencilPressed(id sender) : IBAction\leraserPressed(id sender) : IBAction\lshowOptions(id sender) : IBAction\lshowSettings(id sender) : IBAction\lRGBOpSwitch(id sender) : IBAction\l}"
+        ]
+
+RecordViewController [
+                label = "{RecordViewController|playButton : UIButton *\lrecordButton : UIButton *\lstopButton : UIButton *\laudioReplay : UIProgressView *\lprogressBar : UIProgressView *\l|initWithNibName(NSString *nibNameOrNil, NSBundle *nibBundleOrNil) : id\lrecordAudio(id sender) : IBAction\lplayAudio(id sender) : IBAction\lsendSound(id sender) : IBAction\lstop(id sender) : void\lupdateProgress(id sender): void\l}"
+        ]
+
+ExploreViewController [
+                label = "{ExploreViewController|rateButton1 : UIButton *\lrateButton2 : UIButton *\l|initWithNibName(NSString *nibNameOrNil, NSBundle *nibBundleOrNil) : id\lratePicture(id sender) : IBAction\l}"
+        ]
+}

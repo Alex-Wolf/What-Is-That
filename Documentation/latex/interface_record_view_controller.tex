@@ -1,0 +1,113 @@
+\hypertarget{interface_record_view_controller}{\section{Record\-View\-Controller Class Reference}
+\label{interface_record_view_controller}\index{Record\-View\-Controller@{Record\-View\-Controller}}
+}
+Inheritance diagram for Record\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_record_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_record_view_controller_a744c609891c7b5dad7987a1bf8b848ff}{record\-Audio\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_record_view_controller_ab605dd19c869740a7acbf3ccb8420d40}{play\-Audio\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_record_view_controller_a5df281f625ec7eb0a5137f262d3f60c5}{send\-Sound\-:}
+\item 
+(void) -\/ \hyperlink{interface_record_view_controller_ad04059a6b5d8eaacee8db7f7cad907d3}{stop\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+$<$ A\-V\-Audio\-Recorder\-Delegate, \\*
+A\-V\-Audio\-Player\-Delegate $>$\\*
+ A\-V\-Audio\-Player $\ast$ {\bfseries audio\-Player}
+\item 
+\hypertarget{interface_record_view_controller_a533a053cdbf3e2302b4a653cb1f1b5ec}{U\-I\-Button $\ast$ {\bfseries play\-Button}}\label{interface_record_view_controller_a533a053cdbf3e2302b4a653cb1f1b5ec}
+
+\item 
+\hypertarget{interface_record_view_controller_a30b7720f455ca964c12cc143b0472917}{U\-I\-Button $\ast$ {\bfseries record\-Button}}\label{interface_record_view_controller_a30b7720f455ca964c12cc143b0472917}
+
+\item 
+\hypertarget{interface_record_view_controller_a39258c62291e6b5a650e4296e6afc9bf}{B\-O\-O\-L {\bfseries sound\-Recorded}}\label{interface_record_view_controller_a39258c62291e6b5a650e4296e6afc9bf}
+
+\item 
+\hypertarget{interface_record_view_controller_ae643b4a1512ef55b11d36678d568030e}{N\-S\-Timer $\ast$ {\bfseries timer}}\label{interface_record_view_controller_ae643b4a1512ef55b11d36678d568030e}
+
+\item 
+\hypertarget{interface_record_view_controller_ac9c6a58b286bf0c5acd92a5cf6310f64}{float {\bfseries test\-Progress}}\label{interface_record_view_controller_ac9c6a58b286bf0c5acd92a5cf6310f64}
+
+\item 
+\hypertarget{interface_record_view_controller_a9f55072a0f5718e58b98b2d7f3c15533}{int {\bfseries progress\-Dir}}\label{interface_record_view_controller_a9f55072a0f5718e58b98b2d7f3c15533}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_record_view_controller_a00f5656b10b02f592348b981feaeb0f3}{I\-B\-Outlet U\-I\-Button $\ast$ {\bfseries play\-Button}}\label{interface_record_view_controller_a00f5656b10b02f592348b981feaeb0f3}
+
+\item 
+\hypertarget{interface_record_view_controller_a07c516df8489f2eaa552390aefe2b3ac}{I\-B\-Outlet U\-I\-Button $\ast$ {\bfseries record\-Button}}\label{interface_record_view_controller_a07c516df8489f2eaa552390aefe2b3ac}
+
+\item 
+\hypertarget{interface_record_view_controller_a09a12c1c7587b26db8b3c1ab8e88e22b}{I\-B\-Outlet U\-I\-Button $\ast$ {\bfseries stop\-Button}}\label{interface_record_view_controller_a09a12c1c7587b26db8b3c1ab8e88e22b}
+
+\item 
+\hypertarget{interface_record_view_controller_a961202c2b8cb2f8fb8bd3cd4b55721d6}{I\-B\-Outlet U\-I\-Progress\-View $\ast$ {\bfseries audio\-Replay}}\label{interface_record_view_controller_a961202c2b8cb2f8fb8bd3cd4b55721d6}
+
+\item 
+\hypertarget{interface_record_view_controller_ad63b96c6b88ff31478fc232313331857}{I\-B\-Outlet U\-I\-Progress\-View $\ast$ {\bfseries progress\-Bar}}\label{interface_record_view_controller_ad63b96c6b88ff31478fc232313331857}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_record_view_controller_ab605dd19c869740a7acbf3ccb8420d40}{\index{Record\-View\-Controller@{Record\-View\-Controller}!play\-Audio\-:@{play\-Audio\-:}}
+\index{play\-Audio\-:@{play\-Audio\-:}!RecordViewController@{Record\-View\-Controller}}
+\subsubsection[{play\-Audio\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\-Audio\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_record_view_controller_ab605dd19c869740a7acbf3ccb8420d40}
+Name\-: play\-Audio Parameters\-: sender -- id object that sent the request Return\-: I\-B\-Action Modified\-: none Purpose\-: plays the recorded audio back to the user \hypertarget{interface_record_view_controller_a744c609891c7b5dad7987a1bf8b848ff}{\index{Record\-View\-Controller@{Record\-View\-Controller}!record\-Audio\-:@{record\-Audio\-:}}
+\index{record\-Audio\-:@{record\-Audio\-:}!RecordViewController@{Record\-View\-Controller}}
+\subsubsection[{record\-Audio\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) record\-Audio\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_record_view_controller_a744c609891c7b5dad7987a1bf8b848ff}
+Name\-: record\-Audio Parameters\-: sender -- id object that sent the request Return\-: I\-B\-Action Modified\-: progress\-Dir set to 1, changes color of progress bar, and sets the audio\-Recorder to record Purpose\-: sets up everything needed to record sound and records up to 5 seconds of audio \hypertarget{interface_record_view_controller_a5df281f625ec7eb0a5137f262d3f60c5}{\index{Record\-View\-Controller@{Record\-View\-Controller}!send\-Sound\-:@{send\-Sound\-:}}
+\index{send\-Sound\-:@{send\-Sound\-:}!RecordViewController@{Record\-View\-Controller}}
+\subsubsection[{send\-Sound\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) send\-Sound\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_record_view_controller_a5df281f625ec7eb0a5137f262d3f60c5}
+Name\-: send\-Sound Parameters\-: sender -- id object that sent the request Return\-: I\-B\-Action Modified\-: none Purpose\-: creates an alert telling the user the sound has been sent if they recorded a sound, or if they haven't, tells them that they didn't record a sound \hypertarget{interface_record_view_controller_ad04059a6b5d8eaacee8db7f7cad907d3}{\index{Record\-View\-Controller@{Record\-View\-Controller}!stop\-:@{stop\-:}}
+\index{stop\-:@{stop\-:}!RecordViewController@{Record\-View\-Controller}}
+\subsubsection[{stop\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_record_view_controller_ad04059a6b5d8eaacee8db7f7cad907d3}
+Name\-: stop Parameters\-: sender -- id object that sent the request Return\-: I\-B\-Action Modified\-: enables the record and play buttons Purpose\-: stops recording if the user is currently recording, or stops playback if the user is currently playing their recorded sound back to themselves
+
+Name\-: stop Parameters\-: sender -- id object that sent the request Return\-: none Modified\-: enables the record and play buttons Purpose\-: stops recording if the user is currently recording, or stops playback if the user is currently playing their recorded sound back to themselves 
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_record_view_controller_a45dd1717ae74cbcd7689304955a6ce81}{\index{Record\-View\-Controller@{Record\-View\-Controller}!audio\-Player@{audio\-Player}}
+\index{audio\-Player@{audio\-Player}!RecordViewController@{Record\-View\-Controller}}
+\subsubsection[{audio\-Player}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<$A\-V\-Audio\-Recorder\-Delegate,A\-V\-Audio\-Player\-Delegate$>$ A\-V\-Audio\-Player$\ast$) audio\-Player\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_record_view_controller_a45dd1717ae74cbcd7689304955a6ce81}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+    AVAudioRecorder *audioRecorder
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/alexwolf/\-Documents/\-Junior (\-Spring Semester)/\-App Competition/\-What Is That?/\-What Is That?/Record\-View\-Controller.\-h\item 
+/\-Users/alexwolf/\-Documents/\-Junior (\-Spring Semester)/\-App Competition/\-What Is That?/\-What Is That?/Record\-View\-Controller.\-m\end{DoxyCompactItemize}
